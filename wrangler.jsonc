@@ -1,16 +1,31 @@
 {
-	"compatibility_date": "2025-10-08",
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "ckm-content-factory",
 	"main": "src/index.ts",
-	"name": "chanfana-openapi-template",
-	"upload_source_maps": true,
+	"compatibility_date": "2025-08-01",
 	"observability": {
 		"enabled": true
 	},
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "openapi-template-db",
-			"database_id": "876c8108-e780-428b-90d3-0ba04f2a5d67"
+			"database_name": "ckm_content_hub",
+			"database_id": "1d2555be-ab4e-401c-bdc0-0cf676d98c7a"
 		}
-	]
+	],
+	"r2_buckets": [
+		{
+			"binding": "BOOKS",
+			"bucket_name": "books"
+		}
+	],
+	"vectorize": [
+		{
+			"binding": "VECTORIZE",
+			"index_name": "ckm_knowledge_index"
+		}
+	],
+	"ai": {
+		"binding": "AI"
+	}
 }
