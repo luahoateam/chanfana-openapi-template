@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "ckm-content-factory",
+	"name": "chanfana-openapi-template",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-08-01",
 	"observability": {
