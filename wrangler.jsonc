@@ -10,13 +10,15 @@
 		{
 			"binding": "DB",
 			"database_name": "ckm_content_hub",
-			"database_id": "1d2555be-ab4e-401c-bdc0-0cf676d98c7a"
+			"database_id": "1d2555be-ab4e-401c-bdc0-0cf676d98c7a",
+			"preview_database_id": "e22ac86e-3880-4cff-b1ca-88c6be62bde0"
 		}
 	],
 	"r2_buckets": [
 		{
 			"binding": "BOOKS",
-			"bucket_name": "books"
+			"bucket_name": "books",
+			"preview_bucket_name": "books-preview"
 		}
 	],
 	"vectorize": [

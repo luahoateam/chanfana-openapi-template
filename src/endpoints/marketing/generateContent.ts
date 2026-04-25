@@ -7,11 +7,11 @@ export class GenerateContentEndpoint extends OpenAPIRoute {
 		summary: "Tạo nội dung marketing từ mô hình tư duy",
 		request: {
 			body: {
-				content: z.object({
+				content: {
 					mental_model_id: Str({ description: "ID của mô hình tư duy (vd: first-principles)" }),
 					persona_id: Str({ description: "ID của đối tượng mục tiêu (vd: indie-hackers)" }),
 					campaign_id: Str({ description: "ID của chiến dịch liên quan" }),
-				}),
+				}
 			},
 		},
 		responses: {
@@ -19,13 +19,13 @@ export class GenerateContentEndpoint extends OpenAPIRoute {
 				description: "Trả về nội dung đã tạo và ID bản thảo gốc",
 				content: {
 					"application/json": {
-						schema: z.object({
+						schema: {
 							success: Bool(),
-							result: z.object({
+							result: {
 								master_id: Str(),
 								draft: Str(),
-							}),
-						}),
+							},
+						},
 					},
 				},
 			},
